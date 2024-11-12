@@ -109,6 +109,45 @@
     <section id="car-listings" class="row g-3">
 
     </section>
+    <form id="create-car-form" onsubmit="app.CarsController.postCar()"
+      class="row bg-white rounded p-3 shadow-sm my-3 g-3">
+      <div>
+        <h2>List Your House</h2>
+      </div>
+      <div class="col-md-4">
+        <label for="house-bedrooms">Bedrooms</label>
+        <input required id="house-bedrooms" name="bedrooms" type="number" minlength="2" maxlength="25"
+          class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-bathrooms">Bathrooms</label>
+        <input required id="house-bathrooms" name="bathrooms" type="number" minlength="1" , maxlength="25"
+          class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-year">Year</label>
+        <input required id="house-year" name="year" type="number" min="1885" max="2025" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-price">Price</label>
+        <input required id="house-price" name="price" type="number" min="1" max="10000000000" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="house-imgUrl">Picture</label>
+        <input required id="house-imgUrl" name="imgUrl" type="url" class="form-control">
+      </div>
+      <div class="col-12">
+        <label for="house-description">Description</label>
+        <textarea name="description" id="house-description" class="form-control" rows="3"></textarea>
+      </div>
+      <div class="text-end mt-3">
+        <button class="btn btn-primary px-4">Submit <i class="mdi mdi-plus"></i></button>
+      </div>
+    </form>
+    <h1>Wanna Buy A House?</h1>
+    <hr>
+    <sectio id="house-listings" class="row g-3">
+      </section>
 
   </main>
 

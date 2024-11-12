@@ -1,5 +1,6 @@
 import { AuthController } from './controllers/AuthController.js';
 import { CarsController } from './controllers/CarsController.js';
+import { HouseController } from './controllers/HouseController.js';
 import { router } from './router-config.js';
 const USE_ROUTER = false
 
@@ -8,6 +9,8 @@ class App {
   AuthController = new AuthController()
 
   CarsController = new CarsController()
+
+  HouseController = new HouseController()
 
   constructor() {
     if (USE_ROUTER) {
